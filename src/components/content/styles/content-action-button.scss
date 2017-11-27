@@ -1,0 +1,18 @@
+@import '../../styles/_main.scss';
+
+.content-action-button {
+  @include textstyle-action;
+
+  background-color: $action-color;
+  border-radius: $content-data-action-border-radius;
+  border: 0;
+  color: $action-text-color-inverse;
+  cursor: pointer;
+  display: block;
+  padding: 10px 15px;
+  margin-top: 10px;
+
+  .content-action-group & {
+    margin-top: 0;
+  }
+}

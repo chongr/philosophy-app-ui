@@ -1,0 +1,76 @@
+@import 'media-queries.scss';
+
+// Font Definitions
+$font-family-regular: -apple-system, 'BlinkMacSystemFont', Helvetica, Arial, sans-serif;
+$font-family-medium: -apple-system, 'BlinkMacSystemFont', Helvetica, Arial, sans-serif;
+$font-family-semibold: -apple-system, 'BlinkMacSystemFont', Helvetica, Arial, sans-serif;
+$font-family-medium: -apple-system, 'BlinkMacSystemFont', Helvetica, Arial, sans-serif;
+
+// Font Size Definitions
+$textsize-display3: 25px;
+$textsize-display2: 22px;
+$textsize-display3-override: 23px;
+$textsize-display2-override: 19px;
+$textsize-large: 16px;
+$textsize-medium: 14px;
+$textsize-small: 13px;
+
+// Font Definition Mixins
+@mixin fd-web-display3 {
+  font-family: $font-family-medium;
+  font-size: $textsize-display3;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+
+  @media #{$media-query-mobile-device-font-scale} {
+    font-size: $textsize-display3-override;
+  }
+}
+
+@mixin fd-web-display2 {
+  font-family: $font-family-medium;
+  font-size: $textsize-display2;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+
+  @media #{$media-query-mobile-device-font-scale} {
+    font-size: $textsize-display2-override;
+  }
+}
+
+@mixin fd-web-largebold {
+  font-family: $font-family-medium;
+  font-size: $textsize-large;
+  font-weight: 500;
+}
+
+@mixin fd-web-mediumextrabold {
+  font-family: $font-family-semibold;
+  font-size: $textsize-medium;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+@mixin fd-web-mediumbold {
+  font-family: $font-family-medium;
+  font-size: $textsize-medium;
+  font-weight: normal;
+}
+
+@mixin fd-web-mediumregular {
+  font-family: $font-family-regular;
+  font-size: $textsize-medium;
+  font-weight: normal;
+}
+
+@mixin fd-web-smallbold {
+  font-family: $font-family-medium;
+  font-size: $textsize-small;
+  font-weight: 500;
+}
+
+@mixin fd-web-smallregular {
+  font-family: $font-family-regular;
+  font-size: $textsize-small;
+  font-weight: normal;
+}

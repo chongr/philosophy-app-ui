@@ -1,0 +1,27 @@
+@import '../../styles/_main.scss';
+
+.content-table {
+  width: 100%;
+  padding: 20px 0;
+  border-collapse: collapse;
+
+  &__row {
+    @include textstyle-body;
+
+    height: 24px;
+
+    &--type_bold {
+      font-weight: bold;
+    }
+
+    &:nth-child(2n + 1) {
+      background-color: $content-record-alt-background-color;
+    }
+  }
+
+  &__header {
+    @include textstyle-title;
+
+    height: 34px;
+  }
+}

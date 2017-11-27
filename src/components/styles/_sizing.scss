@@ -1,0 +1,132 @@
+@import 'media-queries.scss';
+
+// General
+$action-hover-opacity: 0.85;
+$border-size: 1px;
+$base-padding: 10px;
+
+// Wizard
+$wizard-base-padding: 20px;
+$wizard-content-bottom-margin: 5px;
+$wizard-content-left-right-padding: 0 20px;
+$wizard-step-max-height: 500px;
+$wizard-step-max-width: 376px;
+$wizard-navigation-button-size: 48px;
+$wizard-navigation-height: 90px;
+$wizard-process-indicator-size: 120px;
+$wizard-step-border-radius: 5px;
+$wizard-step-outer-margin: 10px;
+$wizard-step-button-spacing: 5px;
+$wizard-input-selection-padding-horizontal: 30px;
+$wizard-input-selection-padding-vertical: 20px;
+$wizard-input-selection-border-width: 1px;
+$wizard-input-margin-bottom: 20px;
+
+// Nav Bar
+$nav-bar-height: 80px;
+$nav-bar-height-mobile: $nav-bar-height / 2;
+$nav-item-padding: 30px;
+$nav-masthead-padding: 20px;
+$nav-masthead-padding-mobile: 10px;
+
+// Nav Footer
+$nav-footer-max-width: 675px;
+$nav-footer-margin-top: -35px;
+$nav-footer-margin-top-mobile: -10px;
+$nav-footer-padding: 85px 0 40px;
+$nav-footer-padding-mobile: 30px 0;
+$nav-footer-item-padding: 5px 10px;
+$nav-footer-list-padding: 0 18px;
+$nav-footer-list-padding-mobile: 0 15px;
+
+// Content
+$content-desktop-max-width: 675px;
+
+$content-card-border-radius: 5px;
+
+// Content Card Padding
+$content-card-base-padding: 20px;
+$content-card-base-padding-web: 20px;
+$content-card-base-padding-android: 16px;
+$content-card-base-padding-iphone: 15px;
+$content-card-base-padding-mobile-web: 15px;
+
+// Content Card Margin
+$content-card-margin-bottom: 10px;
+$content-card-margin: $content-card-base-padding;
+$content-card-margin-web: $content-card-base-padding;
+$content-card-margin-android: 16px;
+$content-card-margin-iphone: 15px;
+$content-card-margin-mobile-web: 15px;
+
+// Content Card Spacing
+$content-card-content-spacing: 15px;
+$content-card-content-spacing-web: 15px;
+$content-card-content-spacing-android: 12px;
+$content-card-content-spacing-iphone: 10px;
+$content-card-content-spacing-mobile-web: 10px;
+
+$content-cover-height: 226px;
+$content-cover-mobile-height: 189px;
+$content-cover-large-height: 400px;
+$content-cover-margin-bottom: -53px;
+$content-cover-mobile-margin-bottom: -5px;
+$content-cover-title-padding: 26px $content-card-base-padding 0;
+
+$content-data-border-size: $border-size;
+$content-data-action-border-radius: 5px;
+
+$content-record-action-height: 30px;
+$content-record-gap-size: 15px;
+$content-record-image-border-radius: 5px;
+$content-record-image-size: 40px;
+
+// Spacing Mixins
+@mixin margin-base($var) {
+  margin-#{$var}: $content-card-margin-web;
+
+  html[data-useragent*='Android'] & {
+    margin-#{$var}: $content-card-margin-android;
+  }
+
+  html[data-useragent*='iPhone'] & {
+    margin-#{$var}: $content-card-margin-iphone;
+  }
+
+  @media #{$media-query-tablet-width} {
+    margin-#{$var}: $content-card-margin-mobile-web;
+  }
+}
+
+@mixin padding-base($var) {
+  padding-#{$var}: $content-card-base-padding-web;
+
+  html[data-useragent*='Android'] & {
+    padding-#{$var}: $content-card-base-padding-android;
+  }
+
+  html[data-useragent*='iPhone'] & {
+    padding-#{$var}: $content-card-base-padding-iphone;
+  }
+
+  @media #{$media-query-tablet-width} {
+    padding-#{$var}: $content-card-base-padding-mobile-web;
+  }
+}
+
+@mixin padding-space($var) {
+  padding-#{$var}: $content-card-content-spacing-web;
+
+  html[data-useragent*='Android'] & {
+    padding-#{$var}: $content-card-content-spacing-android;
+  }
+
+  html[data-useragent*='iPhone'] & {
+    padding-#{$var}: $content-card-content-spacing-iphone;
+  }
+
+  @media #{$media-query-tablet-width} {
+    padding-#{$var}: $content-card-content-spacing-mobile-web;
+  }
+}
+

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="13px" viewBox="0 0 8 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Disclosure Indicator</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Accounts-UI-R2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iOS/Global/Disclosure-Indicator" fill-rule="nonzero" fill="#979797">
+            <polygon id="Disclosure" points="5.71328691 7.25037139 5.71328691 5.77962834 0.567685765 11.1738084 0.200000003 11.5592567 0.5854483 11.9269424 1.3563449 12.662314 1.74179319 13.0299997 2.10947896 12.6445514 7.2550801 7.25037139 7.60582188 6.88268563 7.95656365 6.51499987 7.60582188 6.1473141 7.2550801 5.77962834 2.10947896 0.385448297 1.74179319 4.4408921e-16 1.3563449 0.367685762 0.5854483 1.10305729 0.200000003 1.47074305 0.567685765 1.85619135"></polygon>
+        </g>
+    </g>
+</svg>

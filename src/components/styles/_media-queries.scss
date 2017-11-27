@@ -1,0 +1,9 @@
+// Scaling for device screens based on width
+$media-query-mobile-device-font-scale: 'only screen and (max-device-width: 380px)';
+$media-query-mobile-device-width: 'only screen and (max-device-width: 380px)';
+$media-query-tablet-device-width: 'only screen and (max-device-width: 768px)';
+
+// Scaling for all screen sizes based on widths
+$media-query-large-width: 'only screen and (min-width: 1280px)';
+$media-query-mobile-width: 'only screen and (max-width: 380px)';
+$media-query-tablet-width: 'only screen and (max-width: 768px)';

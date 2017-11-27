@@ -1,0 +1,70 @@
+// iOS Font Definitions
+$font-family-ios-sfuitext-regular: -apple-system, 'BlinkMacSystemFont', Helvetica, Arial, sans-serif;
+$font-family-ios-sfuitext-medium: -apple-system, 'BlinkMacSystemFont', Helvetica, Arial, sans-serif;
+$font-family-ios-sfuitext-semibold: -apple-system, 'BlinkMacSystemFont', Helvetica, Arial, sans-serif;
+$font-family-ios-sfuidisplay-medium: -apple-system, 'BlinkMacSystemFont', Helvetica, Arial, sans-serif;
+
+// Font Size Definitions
+$textsize-ios-display3: 25px;
+$textsize-ios-display2: 22px;
+$textsize-ios-display3-override: 23px;
+$textsize-ios-display2-override: 19px;
+$textsize-ios-large: 16px;
+$textsize-ios-medium: 14px;
+$textsize-ios-small: 13px;
+
+$media-query-override-ios: '(max-device-width: 374px)';
+
+// Font Definition Mixins - iOS
+@mixin fd-ios-display3 {
+  font-family: $font-family-ios-sfuidisplay-medium;
+  font-size: $textsize-ios-display3;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+
+  @media #{$media-query-override-ios} {
+    font-size: $textsize-ios-display3-override;
+  }
+}
+
+@mixin fd-ios-display2 {
+  font-family: $font-family-ios-sfuidisplay-medium;
+  font-size: $textsize-ios-display2;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+
+  @media #{$media-query-override-ios} {
+    font-size: $textsize-ios-display2-override;
+  }
+}
+
+@mixin fd-ios-largebold {
+  font-family: $font-family-ios-sfuitext-medium;
+  font-size: $textsize-ios-large;
+  font-weight: 500;
+}
+
+@mixin fd-ios-mediumextrabold {
+  font-family: $font-family-ios-sfuitext-semibold;
+  font-size: $textsize-ios-medium;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+@mixin fd-ios-mediumregular {
+  font-family: $font-family-ios-sfuitext-regular;
+  font-size: $textsize-ios-medium;
+  font-weight: normal;
+}
+
+@mixin fd-ios-smallbold {
+  font-family: $font-family-ios-sfuitext-medium;
+  font-size: $textsize-ios-small;
+  font-weight: 500;
+}
+
+@mixin fd-ios-smallregular {
+  font-family: $font-family-ios-sfuitext-regular;
+  font-size: $textsize-ios-small;
+  font-weight: normal;
+}

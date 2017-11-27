@@ -1,0 +1,14 @@
+@import '../../styles/_main.scss';
+
+.content-action-group {
+  @include margin-left('base');
+  @include padding('space', 'base', 'space', 0);
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+
+  &--separated {
+    border-top: $content-data-border-size solid $border-regular-solid-color;
+  }
+}

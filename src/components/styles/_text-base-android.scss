@@ -1,0 +1,74 @@
+@import 'media-queries.scss';
+
+// Android Font Definitions
+$font-family-roboto-android: 'Roboto', Helvetica, Arial, sans-serif;
+
+// Font Size Definitions
+$textsize-android-display3: 30px;
+$textsize-android-display2: 24px;
+$textsize-android-display3-override: 28px;
+$textsize-android-display2-override: 23px;
+$textsize-android-large: 15px;
+$textsize-android-medium: 14px;
+$textsize-android-small: 13px;
+
+$media-query-override-android: '(max-device-width: 374px)';
+
+// Font Definition Mixins - Android
+@mixin fd-android-display3 {
+  font-family: $font-family-roboto-android;
+  font-size: $textsize-android-display3;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+
+  @media #{$media-query-override-android} {
+    font-size: $textsize-android-display3-override;
+  }
+}
+
+@mixin fd-android-display2 {
+  font-family: $font-family-roboto-android;
+  font-size: $textsize-android-display2;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+
+  @media #{$media-query-override-android} {
+    font-size: $textsize-android-display2-override;
+  }
+}
+
+@mixin fd-android-largebold {
+  font-family: $font-family-roboto-android;
+  font-size: $textsize-android-large;
+  font-weight: 500;
+}
+
+@mixin fd-android-mediumextrabold {
+  font-family: $font-family-roboto-android;
+  font-size: $textsize-android-medium;
+  font-weight: 500;
+}
+
+@mixin fd-android-mediumbold {
+  font-family: $font-family-roboto-android;
+  font-size: $textsize-medium;
+  font-weight: normal;
+}
+
+@mixin fd-android-mediumregular {
+  font-family: $font-family-roboto-android;
+  font-size: $textsize-android-medium;
+  font-weight: 400;
+}
+
+@mixin fd-android-smallbold {
+  font-family: $font-family-roboto-android;
+  font-size: $textsize-android-small;
+  font-weight: 500;
+}
+
+@mixin fd-android-smallregular {
+  font-family: $font-family-roboto-android;
+  font-size: $textsize-android-small;
+  font-weight: 400;
+}

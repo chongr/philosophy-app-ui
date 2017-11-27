@@ -1,0 +1,44 @@
+@import '../../styles/_main.scss';
+
+.content-section {
+  @include margin-left('base');
+  @include padding(0, 'base', 'base', 0);
+
+  position: relative;
+
+  &--separated {
+    @include padding-top('base');
+
+    border-top: $content-data-border-size solid $border-regular-solid-color;
+  }
+
+  &__expand-button {
+    background-color: transparent;
+    background-image: url('../images/expand.png');
+    background-position: right $content-card-base-padding center;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    height: 40px;
+    outline: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+
+    &--expanded {
+      background-image: url('../images/collapse.png');
+    }
+  }
+
+  &__expanded-content {
+    max-height: 0;
+    overflow: hidden;
+
+    &--visible {
+      @include padding-top('base');
+
+      max-height: none;
+    }
+  }
+}

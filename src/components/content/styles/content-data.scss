@@ -1,0 +1,21 @@
+@import '../../styles/_main.scss';
+
+.content-data {
+  @include padding('space', 'base', 0, 0);
+
+  &:first-child {
+    padding-top: 0;
+  }
+
+  &__value {
+    @include textstyle-title;
+  }
+
+  &--clickable {
+    cursor: pointer;
+  }
+
+  &__label {
+    @include textstyle-caption;
+  }
+}

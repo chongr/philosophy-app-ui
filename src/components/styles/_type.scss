@@ -1,0 +1,205 @@
+@import 'color-mappings.scss';
+@import 'text-base-web.scss';
+@import 'text-base-android.scss';
+@import 'text-base-ios.scss';
+
+// Text Style Definition Mixins
+@mixin textstyle-header2 {
+  @include fd-web-display3;
+
+  color: $text-prominent-color;
+  line-height: 25px;
+
+  html[data-useragent*='Android'] & {
+    @include fd-android-display3;
+  }
+
+  html[data-useragent*='iPhone'] & {
+    @include fd-ios-display3;
+  }
+}
+
+@mixin textstyle-header3 {
+  @include fd-web-display2;
+
+  color: $text-prominent-color;
+  line-height: 22px;
+
+  html[data-useragent*='Android'] & {
+    @include fd-android-display2;
+  }
+
+  html[data-useragent*='iPhone'] & {
+    @include fd-ios-display2;
+  }
+}
+
+@mixin textstyle-subheader {
+  @include fd-web-smallbold;
+
+  color: $text-lesser-color;
+  line-height: 14px;
+
+  html[data-useragent*='Android'] & {
+    @include fd-android-smallbold;
+  }
+
+  html[data-useragent*='iPhone'] & {
+    @include fd-ios-smallbold;
+  }
+}
+
+@mixin textstyle-cardlabel {
+  @include fd-web-smallbold;
+
+  color: $text-lesser-color;
+  text-transform: uppercase;
+
+  html[data-useragent*='Android'] & {
+    @include fd-android-smallbold;
+  }
+
+  html[data-useragent*='iPhone'] & {
+    @include fd-ios-smallbold;
+  }
+}
+
+@mixin textstyle-title {
+  @include fd-web-largebold;
+
+  color: $text-semi-prominent-color;
+  line-height: 20px;
+
+  html[data-useragent*='Android'] & {
+    @include fd-android-largebold;
+  }
+
+  html[data-useragent*='iPhone'] & {
+    @include fd-ios-largebold;
+  }
+}
+
+@mixin textstyle-body {
+  @include fd-web-mediumregular;
+
+  color: $text-regular-color;
+
+  html[data-useragent*='Android'] & {
+    @include fd-android-mediumregular;
+  }
+
+  html[data-useragent*='iPhone'] & {
+    @include fd-ios-mediumregular;
+  }
+}
+
+@mixin textstyle-body-action {
+  @include fd-web-mediumbold;
+
+  color: $action-color;
+  line-height: 16px;
+  text-decoration: none;
+
+  html[data-useragent*='Android'] & {
+    @include fd-android-smallbold;
+  }
+
+  html[data-useragent*='iPhone'] & {
+    @include fd-android-mediumextrabold;
+  }
+}
+
+@mixin textstyle-caption {
+  @include fd-web-smallregular;
+
+  color: $text-lesser-color;
+
+  html[data-useragent*='Android'] & {
+    @include fd-android-smallregular;
+  }
+
+  html[data-useragent*='iPhone'] & {
+    @include fd-ios-smallregular;
+  }
+}
+
+@mixin textstyle-action {
+  @include fd-web-mediumextrabold;
+
+  color: $action-color;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  html[data-useragent*='Android'] & {
+    @include fd-android-mediumextrabold;
+  }
+
+  html[data-useragent*='iPhone'] & {
+    @include fd-ios-mediumextrabold;
+  }
+}
+
+@mixin textstyle-input-active {
+  @include fd-web-display2;
+
+  color: $text-prominent-color;
+
+  html[data-useragent*='Android'] & {
+    @include fd-android-display2;
+  }
+
+  html[data-useragent*='iPhone'] & {
+    @include fd-ios-display2;
+  }
+}
+
+@mixin textstyle-input-placeholder {
+  @include fd-web-display2;
+
+  color: $text-inactive-color;
+
+  html[data-useragent*='Android'] & {
+    @include fd-android-display2;
+  }
+
+  html[data-useragent*='iPhone'] & {
+    @include fd-ios-display2;
+  }
+}
+
+@mixin textstyle-wizard-navigation-action {
+  @include fd-web-smallbold;
+
+  color: $text-inverse-color;
+  line-height: 14px;
+
+  html[data-useragent*='Android'] & {
+    @include fd-android-smallbold;
+  }
+
+  html[data-useragent*='iPhone'] & {
+    @include fd-ios-smallbold;
+  }
+}
+
+@mixin textstyle-nav-item-action {
+  @include fd-web-largebold;
+
+  color: $nav-item-text-action-color;
+  text-transform: uppercase;
+
+  html[data-useragent*='Android'] & {
+    @include fd-android-largebold;
+  }
+
+  html[data-useragent*='iPhone'] & {
+    @include fd-ios-largebold;
+  }
+}
+
+@mixin textstyle-nav-footer-item {
+  @include fd-web-smallregular;
+
+  color: $nav-footer-item-action-color;
+  text-transform: uppercase;
+}

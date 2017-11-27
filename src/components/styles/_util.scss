@@ -1,0 +1,117 @@
+// Reset buttons for further styling
+@mixin button-reset {
+  background: none;
+  border: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: block;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+
+  &:hover {
+    opacity: $action-hover-opacity;
+  }
+}
+
+// Padding
+@mixin padding($top, $right, $bottom, $left) {
+  @include padding-top($top);
+  @include padding-right($right);
+  @include padding-bottom($bottom);
+  @include padding-left($left);
+}
+
+@mixin padding-top($top) {
+  @if $top == 'space' {
+    @include padding-space('top');
+  }
+  @else if $top == 'base' {
+    @include padding-base('top');
+  }
+  @else {
+    padding-top: $top;
+  }
+}
+
+@mixin padding-right($right) {
+  @if $right == 'space' {
+    @include padding-space('right');
+  }
+  @else if $right == 'base' {
+    @include padding-base('right');
+  }
+  @else {
+    padding-right: $right;
+  }
+}
+
+@mixin padding-bottom($bottom) {
+  @if $bottom == 'space' {
+    @include padding-space('bottom');
+  }
+  @else if $bottom == 'base' {
+    @include padding-base('bottom');
+  }
+  @else {
+    padding-bottom: $bottom;
+  }
+}
+
+@mixin padding-left($left) {
+  @if $left == 'space' {
+    @include padding-space('left');
+  }
+  @else if $left == 'base' {
+    @include padding-base('left');
+  }
+  @else {
+    padding-left: $left;
+  }
+}
+
+// Margin
+@mixin margin($top, $right, $bottom, $left) {
+  @include margin-top($top);
+  @include margin-right($right);
+  @include margin-bottom($bottom);
+  @include margin-left($left);
+}
+
+@mixin margin-top($top) {
+  @if $top == 'base' {
+    @include margin-base('top');
+  }
+  @else {
+    margin-top: $top;
+  }
+}
+
+@mixin margin-right($right) {
+  @if $right == 'base' {
+    @include margin-base('right');
+  }
+  @else {
+    margin-right: $right;
+  }
+}
+
+@mixin margin-bottom($bottom) {
+  @if $bottom == 'base' {
+    @include margin-base('bottom');
+  }
+  @else {
+    margin-bottom: $bottom;
+  }
+}
+
+@mixin margin-left($left) {
+  @if $left == 'base' {
+    @include margin-base('left');
+  }
+  @else {
+    margin-left: $left;
+  }
+}

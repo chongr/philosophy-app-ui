@@ -1,0 +1,8 @@
+@import '../../styles/_main.scss';
+
+.content-title {
+  @include textstyle-title;
+
+  margin: 0 0 -5px 0;
+  padding: 0;
+}

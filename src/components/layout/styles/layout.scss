@@ -1,0 +1,31 @@
+@import '../../styles/_main.scss';
+
+body,
+html {
+  background-color: $background-splash-color;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+a {
+  color: $action-color;
+  text-decoration: none;
+}
+
+.araf-layout {
+  min-height: 100%;
+
+  &__wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100%;
+    min-height: 100vh;
+  }
+
+  &__container {
+    position: relative;
+    z-index: 1;
+  }
+}

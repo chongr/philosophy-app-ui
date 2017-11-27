@@ -1,0 +1,11 @@
+@import '../../styles/_main.scss';
+
+.content-input {
+    padding: 10px;
+
+    &__error-msg {
+        text-align: center;
+        padding: 5px;
+        color: red;
+    }
+}

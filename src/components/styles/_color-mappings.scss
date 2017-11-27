@@ -1,0 +1,85 @@
+@import 'colors.scss';
+
+$hidden-color: $transparent;
+$background-color: $black10;
+$background-splash-color: $dark-purple;
+
+// Cards
+$card-background-color: $white;
+$card-top-shadow-color: $blacka05;
+$card-bottom-shadow-color: $blacka10;
+
+// Borders
+$border-regular-color: $blacka10;
+$border-regular-solid-color: $black10;
+
+// States
+$neutral-color: $black70;
+$good-color: $green;
+$bad-color: $red;
+
+// Copy
+$text-prominent-color: $black90;
+$text-semi-prominent-color: $black70;
+$text-regular-color: $black50;
+$text-lesser-color: $black40;
+$text-inactive-color: $blacka20;
+$text-inverse-color: $white;
+$text-inverse-light-color: $whitea80;
+
+$text-error-color: $bad-color;
+$text-bad-color: $bad-color;
+$text-good-color: $good-color;
+
+// Actions
+$action-color: $blue;
+$action-text-color-inverse: $white;
+$action-text-color-inverse-disabled: $whitea40;
+$action-disabled-color: $black20;
+
+// Images
+$image-placeholder-color: $black05;
+
+// Inputs
+$input-selected-color: $black03;
+$input-selected-solid-color: $action-color;
+$input-deselected-color: $white;
+$input-clear-action-color: $black15;
+
+// Wizard
+$wizard-navigation-action-button-color: $whitea10;
+$wizard-card-background-color: $card-background-color;
+$wizard-navigation-footer-text-color: $whitea80;
+
+// Wizard Input Slider
+$wizard-input-slider-background-color: $white;
+$wizard-input-slider-focused-background-color: $black03;
+$wizard-input-slider-focused-border-color: $blue;
+$wizard-input-slider-thumb-background-color: $white;
+$wizard-input-slider-focused-thumb-border-color: $black03;
+$wizard-input-slider-thumb-shadow-color: $black20;
+$wizard-input-slider-progress-background-color: $blue;
+$wizard-input-slider-track-background-color: $blue;
+
+// Wizard Input Selection
+$wizard-input-selection-background-color: $white;
+$wizard-input-selection-focused-background-color: $black03;
+$wizard-input-selection-border-color: $blacka15;
+$wizard-input-selection-focused-border-color: $blue;
+$wizard-input-selection-color: $text-semi-prominent-color;
+$wizard-input-selection-selected-color: $text-prominent-color;
+
+// Site Navigation Bar
+$nav-bar-background-color: $white;
+$nav-bar-background-second-level-color: $black03;
+$nav-item-action-color: $green;
+$nav-item-text-action-color: $black40;
+$nav-item-text-action-selected-color: $blue;
+
+// Site Navigation Footer
+$nav-footer-background-color: $blacka70;
+$nav-footer-item-action-color: $white;
+
+// Content
+$content-record-alt-background-color: $black03;
+$content-record-special-color: $marigold;

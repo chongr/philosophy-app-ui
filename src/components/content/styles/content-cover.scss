@@ -1,0 +1,29 @@
+@import '../../styles/_main.scss';
+
+.content-cover {
+  background: 50% 50% / cover no-repeat;
+  box-sizing: border-box;
+  height: $content-cover-height;
+  margin: 0 0 $content-cover-margin-bottom;
+  padding: 0;
+  width: 100%;
+
+  @media #{$media-query-mobile-device-width} {
+    height: $content-cover-mobile-height;
+    margin: 0 0 $content-cover-mobile-margin-bottom;
+  }
+
+  @media #{$media-query-large-width} {
+    height: $content-cover-large-height;
+  }
+
+  &__header {
+    @include textstyle-header3;
+
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: $content-desktop-max-width;
+    padding: $content-cover-title-padding;
+    color: $text-inverse-color;
+  }
+}

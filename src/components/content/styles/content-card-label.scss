@@ -1,0 +1,7 @@
+@import '../../styles/_main.scss';
+
+.content-card-label {
+  @include textstyle-cardlabel;
+  @include margin(0, 0, 0, 'base');
+  @include padding('base', 'base', 'base', 0);
+}

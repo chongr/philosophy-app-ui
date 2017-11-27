@@ -1,0 +1,31 @@
+@import '../../styles/_main.scss';
+
+.content-record-list {
+  @include padding(0,0,0,0);
+
+  list-style: none;
+  margin: 0;
+
+  &__item {
+    &--separated {
+      @include padding('base', 'base', 'base',0);
+      @include margin-left('base');
+
+      border-top: $content-data-border-size solid $border-regular-solid-color;
+
+      &:first-child {
+        border: none;
+      }
+    }
+
+    &--shaded {
+      @include padding('base', 'base', 'base', 'base');
+
+      border: none;
+
+      &:nth-child(2n+1) {
+        background-color: $content-record-alt-background-color;
+      }
+    }
+  }
+}

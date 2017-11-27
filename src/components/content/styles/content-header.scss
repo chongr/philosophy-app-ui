@@ -1,0 +1,44 @@
+@import '../../styles/_main.scss';
+
+.content-header {
+  @include margin-left('base');
+  @include padding('base', 'base', 'base', 0);
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+
+  &__text-items {
+    flex-flow: column;
+    width: 90%;
+  }
+
+  &__title {
+    @include textstyle-header2;
+
+    margin: 0;
+    padding: 10px;
+  }
+
+  &__body {
+    @include textstyle-body;
+
+    margin: 5px 0 0;
+    padding: 10px;
+  }
+
+  &__icon {
+    align-self: flex-start;
+    border-radius: $content-record-image-border-radius;
+    height: $content-record-image-size;
+    flex-basis: $content-record-image-size;
+    width: $content-record-image-size;
+    margin-left: $content-card-content-spacing;
+  }
+
+  &__pre-header {
+    @include textstyle-cardlabel;
+
+    align-self: flex-start;
+  }
+}
