@@ -1,6 +1,7 @@
 # Overview
 
-Philosophy App ui (makes requests to the [Philosophy App Api](https://github.com/chongr/philosophy-app-api))
+Philosophy App ui (makes requests to the [Philosophy App Api](https://github.com/chongr/philosophy-app-api)).
+Hosted on [heroku](http://philosophy-app-ui.herokuapp.com/)
 
 # Running The Application
 
