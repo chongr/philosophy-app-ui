@@ -121,7 +121,7 @@ class App extends Component {
       <DocumentTitle title="Wikipedia Path to Philosophy">
         <Layout>
           <ContentCover
-            imageUrl={'https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Sanzio_01.jpg/1280px-Sanzio_01.jpg'}
+              imageUrl={'https://res.cloudinary.com/daon8xyhn/image/upload/v1539918944/philosophy_jmtqkn.jpg'}
           />
           <ContentCard>
             <ContentHeader title="Find the Wikipedia Path to Philosophy"></ContentHeader>
